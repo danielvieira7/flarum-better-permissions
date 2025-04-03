@@ -1,0 +1,30 @@
+{
+    "name": "danielvieira/flarum-better-permissions",
+    "description": "Improves the UI of the Flarum admin permissions page.",
+    "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel VisEd",
+            "email": "daniel@vised.com"
+        }
+    ],
+    "require": {
+        "flarum/core": "^1.0"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Better Permissions UI",
+            "icon": {
+                "name": "fas fa-th-list",
+                "backgroundColor": "#e74c3c",
+                "color": "#fff"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "DanielVieira\\BetterPermissions\\": "src/"
+        }
+    }
+}

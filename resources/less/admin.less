@@ -1,0 +1,74 @@
+.PermissionsPageLayout {
+    display: flex;
+    flex-direction: row;
+    gap: 15px; // Espaço entre a sidebar e a grid
+  }
+  
+  .GroupSelectionSidebar {
+    flex: 0 0 250px; // Largura fixa (ou use flex-basis), não cresce, não encolhe
+    border-right: 1px solid #ddd;
+    padding-right: 15px;
+    height: calc(100vh - 150px); // Ajuste a altura conforme necessário (considerando header/footer do admin)
+    overflow-y: auto; // Permite rolagem vertical se a lista for longa
+  
+    h3 {
+      margin-top: 0;
+      font-size: 1em;
+      color: #666;
+      text-transform: uppercase;
+    }
+  
+    .FormControl {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .GroupList {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .GroupListItem {
+      margin-bottom: 5px;
+      padding: 5px;
+      border-radius: 4px;
+      cursor: pointer; // Indica que é clicável (embora o checkbox seja o alvo)
+  
+      &:hover {
+         background-color: #f5f5f5;
+      }
+  
+      .Checkbox {
+          display: flex; // Alinha checkbox, badge e nome
+          align-items: center;
+          gap: 8px; // Espaço entre elementos dentro do checkbox
+          // Torna o label inteiro clicável (melhora UX)
+          width: 100%;
+      }
+  
+      .GroupListItem-name {
+         white-space: nowrap;
+         overflow: hidden;
+         text-overflow: ellipsis; // Evita que nomes longos quebrem o layout
+         flex-grow: 1; // Ocupa espaço restante
+      }
+    }
+  }
+  
+  .PermissionsPageGridContainer {
+    flex: 1 1 auto; // Ocupa o espaço restante, pode crescer e encolher
+    overflow-x: auto; // Permite rolagem horizontal APENAS na grade se necessário
+  }
+  
+  // Ajuste para a tabela dentro do container, se necessário
+  .PermissionsPageGridContainer .PermissionGrid {
+      // Estilos específicos para a tabela neste novo layout, se houver conflitos
+  }
+  
+  // Garante que a página de permissões ocupe espaço
+  .PermissionsPage {
+      // Pode precisar de ajustes se o layout base do Flarum mudar
+  }
+  
+  
