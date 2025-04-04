@@ -50,6 +50,18 @@
   flex: 1 1 auto;
   overflow-x: auto;
 }
+.PermissionsPageLayout--with-sidebar {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.PermissionsPageLayout--with-sidebar > .GroupSelectionSidebar {
+  flex: 0 0 250px;
+}
+.PermissionsPageLayout--with-sidebar > .PermissionGrid {
+  flex: 1 1 auto;
+  min-width: 0;
+}
 
 
 /*# sourceMappingURL=admin.css.map*/

@@ -71,4 +71,17 @@
       // Pode precisar de ajustes se o layout base do Flarum mudar
   }
   
-  
+  .PermissionsPageLayout--with-sidebar {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; // Espaçamento entre sidebar e grade
+
+    > .GroupSelectionSidebar {
+        flex: 0 0 250px; // Largura fixa para a sidebar, sem encolher/esticar
+    }
+
+    > .PermissionGrid { // Ou o container que envolve a grade
+        flex: 1 1 auto; // Permite que a grade cresça e encolha
+        min-width: 0; // Importante para flexbox com tabelas
+    }
+}
