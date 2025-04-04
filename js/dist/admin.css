@@ -1,0 +1,55 @@
+.PermissionsPageLayout {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.GroupSelectionSidebar {
+  flex: 0 0 250px;
+  border-right: 1px solid #ddd;
+  padding-right: 15px;
+  height: calc(100vh - 150px);
+  overflow-y: auto;
+}
+.GroupSelectionSidebar h3 {
+  margin-top: 0;
+  font-size: 1em;
+  color: #666;
+  text-transform: uppercase;
+}
+.GroupSelectionSidebar .FormControl {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.GroupSelectionSidebar .GroupList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.GroupSelectionSidebar .GroupListItem {
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.GroupSelectionSidebar .GroupListItem:hover {
+  background-color: #f5f5f5;
+}
+.GroupSelectionSidebar .GroupListItem .Checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+.GroupSelectionSidebar .GroupListItem .GroupListItem-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+}
+.PermissionsPageGridContainer {
+  flex: 1 1 auto;
+  overflow-x: auto;
+}
+
+
+/*# sourceMappingURL=admin.css.map*/

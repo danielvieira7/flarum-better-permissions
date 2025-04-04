@@ -1,10 +1,12 @@
+import '../../../resources/less/admin.less'; // Importa o arquivo LESS
+
 import { extend, override } from 'flarum/common/extend';
 import app from 'flarum/admin/app';
 import PermissionGrid from 'flarum/admin/components/PermissionGrid';
 import GroupSelectionSidebar from './components/GroupSelectionSidebar';
 import Group from 'flarum/common/models/Group';
 
-app.initializers.add('acme-better-permissions', () => {
+app.initializers.add('danielvieira7-better-permissions', () => {
   // Estado compartilhado para grupos selecionados
   // Inicializa com Admin e Mod (IDs 1 e 2 geralmente)
   // Poderia ser mais robusto buscando por nome ou usando constantes do Flarum
