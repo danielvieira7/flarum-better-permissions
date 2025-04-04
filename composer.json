@@ -1,5 +1,5 @@
 {
-    "name": "danielvieira/flarum-better-permissions",
+    "name": "danielvieira7/flarum-better-permissions",
     "description": "Improves the UI of the Flarum admin permissions page.",
     "type": "flarum-extension",
     "license": "MIT",
@@ -24,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DanielVieira\\BetterPermissions\\": "src/"
+            "DanielVieira7\\BetterPermissions\\": "src/"
         }
     }
 }
