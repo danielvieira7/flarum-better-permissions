@@ -1,6 +1,6 @@
 <?php
 
-namespace Acme\BetterPermissions;
+namespace DanielVieira7\BetterPermissions;
 
 use Flarum\Extend;
 
